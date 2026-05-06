@@ -21,12 +21,12 @@ extern "C" {
 
 #ifndef CMDLINE_PARSER_PACKAGE
 /** @brief the program name (used for printing errors) */
-#define CMDLINE_PARSER_PACKAGE "conta_letra"
+#define CMDLINE_PARSER_PACKAGE "bytes_for_int"
 #endif
 
 #ifndef CMDLINE_PARSER_PACKAGE_NAME
 /** @brief the complete program name (used for help and version) */
-#define CMDLINE_PARSER_PACKAGE_NAME "conta_letra"
+#define CMDLINE_PARSER_PACKAGE_NAME "bytes_for_int"
 #endif
 
 #ifndef CMDLINE_PARSER_VERSION
@@ -39,17 +39,13 @@ struct gengetopt_args_info
 {
   const char *help_help; /**< @brief Print help and exit help description.  */
   const char *version_help; /**< @brief Print version and exit help description.  */
-  char * string_arg;	/**< @brief string.  */
-  char * string_orig;	/**< @brief string original value given at command line.  */
-  const char *string_help; /**< @brief string help description.  */
-  char * letra_arg;	/**< @brief letra.  */
-  char * letra_orig;	/**< @brief letra original value given at command line.  */
-  const char *letra_help; /**< @brief letra help description.  */
+  long num_arg;	/**< @brief number.  */
+  char * num_orig;	/**< @brief number original value given at command line.  */
+  const char *num_help; /**< @brief number help description.  */
   
   unsigned int help_given ;	/**< @brief Whether help was given.  */
   unsigned int version_given ;	/**< @brief Whether version was given.  */
-  unsigned int string_given ;	/**< @brief Whether string was given.  */
-  unsigned int letra_given ;	/**< @brief Whether letra was given.  */
+  unsigned int num_given ;	/**< @brief Whether num was given.  */
 
 } ;
 
