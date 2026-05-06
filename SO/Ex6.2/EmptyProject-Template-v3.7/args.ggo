@@ -1,0 +1,12 @@
+package "conta_letra"
+version "1.0"
+purpose "Simple example (optional)"
+description "description needed (optional)"
+versiontext "versiontext needed (optional)"
+
+
+
+option "string" s "string" string required
+option "letra"  c "letra" string required
+
+
